@@ -6,9 +6,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 const port = 5500;
 const fs = require("fs");
-if (!fs.existsSync("./data.json")) {
-  fs.writeFileSync("data.json", "{}");
-}
 
 app.get("/project", (req, res) => {
   const db = JSON.parse(fs.readFileSync("data.json", "utf-8")).project;
