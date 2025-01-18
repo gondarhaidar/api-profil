@@ -4,7 +4,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-const port = 3000;
+const port = 5500;
 const fs = require("fs");
 if (!fs.existsSync("./data.json")) {
   fs.writeFileSync("data.json", "{}");
