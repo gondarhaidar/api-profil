@@ -11,7 +11,8 @@ if (!fs.existsSync("./data.json")) {
 }
 
 app.get("/project", (req, res) => {
-  const db = JSON.parse(fs.readFileSync("data.json", "utf-8"));
+  const db = JSON.parse(fs.readFileSync("data.json", "utf-8")).project;
+  res.status(200).json(db);
 });
 
 app.use((req, res) => {
