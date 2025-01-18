@@ -1,42 +1,49 @@
+# Node modules
+node_modules/
+
 # Logs
-logs
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Dependency directories
-node_modules/
-
 # Environment variables
 .env
 
-# Build directories
-dist/
-build/
-
 # Temporary files
-tmp/
+*.tmp
+*.temp
+
+# Multer upload directories (customize as per your setup)
+uploads/
 temp/
 
-# Editor directories and files
-.vscode/
+# IDE/Editor specific
 .idea/
+.vscode/
 *.swp
 *.swo
 
-# OS-specific files
+# Operating system files
 .DS_Store
 Thumbs.db
 
-# Coverage directory
+# Build and dist folders (if applicable)
+dist/
+build/
+
+# Coverage reports
 coverage/
 
-# Production files
-*.tar.gz
-*.zip
-
-# Miscellaneous
+# Debugger output
 *.pid
 *.seed
 *.pid.lock
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Miscellaneous
+!.gitkeep
