@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0px auto;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 2px 2px 5px 1px rgb(141, 139, 139);
+        margin: 10px 0px;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      .form input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+        font-size: 18px;
+        padding: 3px;
+      }
+      .form .img {
+        font-size: 14px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a
+        href="/dashboard"
+        style="
+          display: block;
+          text-align: center;
+          width: 30vh;
+          padding: 3px 0px;
+          border-radius: 6px;
+          background-color: teal;
+          color: white;
+          border-color: white;
+          font-size: 18px;
+          text-decoration: none;
+        "
+      >
+        Close
+      </a>
+      <form action="/edit" method="post">
+        <div class="form">
+          <input type="hidden" value="<%= data.id %>" />
+          <label for="">Nama : </label>
+          <input
+            type="text"
+            class="nama"
+            placeholder="Project Name"
+            value="<%=data.nama%>"
+          />
+        </div>
+        <div class="form">
+          <label for="">linkPreview : </label>
+          <input
+            type="text"
+            class="linkPreview"
+            placeholder="linkPreview"
+            value="<%= data.linkPreview%>"
+          />
+        </div>
+        <div class="form">
+          <label for="">linkCode : </label>
+          <input
+            type="text"
+            class="linkCode"
+            placeholder="linkCode"
+            value="<%= data.linkCode %>"
+          />
+        </div>
+        <div class="form">
+          <label for="">Img : </label>
+          <input type="file" class="img" />
+        </div>
+        <button
+          class="edit"
+          type="submit"
+          style="
+            width: 30vh;
+            padding: 3px 0px;
+            border-radius: 6px;
+            background-color: teal;
+            color: white;
+            border-color: white;
+            font-size: 18px;
+          "
+        >
+          Edit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

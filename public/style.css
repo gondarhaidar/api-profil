@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: none;
+  height: 100%;
+  max-width: 100%;
+}
+
+svg {
+  cursor: auto;
+}
+nav {
+  background-color: teal;
+  padding: 5px;
+  box-shadow: 0px 1px 1px 1px black;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+nav .nav {
+  max-width: 900px;
+  margin: 0px auto;
+  background-color: teal;
+  display: flex;
+  background-color: teal;
+  justify-content: space-between;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+  box-sizing: border-box;
+}
+nav span {
+  font-size: 20px;
+  color: white;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+ul li {
+  cursor: pointer;
+  margin-left: 15px;
+  color: #ccc;
+}
+ul li:hover {
+  color: white;
+}
+.garis {
+  display: none;
+}
+h1 {
+  color: teal;
+  text-shadow: 1px 1px 1px black;
+}
+.container {
+  background-color: #eaeaea;
+  max-width: 900px;
+  margin: 2px auto;
+  padding-top: 50px;
+}
+.loading {
+  width: 100px;
+  height: 100px;
+  border-left: solid teal;
+  border-right: solid black;
+  margin: 10px auto;
+  border-radius: 100%;
+  animation: loading 1s infinite ease-in;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+    border-left: solid black;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-right: solid teal;
+  }
+}
+.project {
+  padding: 10px;
+}
+.body-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.project .brd-project {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px black;
+  background-color: white;
+  margin-top: 10px;
+  padding-bottom: 3px;
+}
+.project .brd-project .brd-img {
+  height: 300px;
+}
+.project img {
+  height: 100%;
+}
+.project .brd-project hr {
+  margin: 5px 0px;
+}
+#add {
+  width: 200px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 0px;
+}
+.link {
+  width: 95%;
+  display: block;
+  text-decoration: none;
+  margin: 10px auto;
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: #1c7777;
+  text-align: center;
+}
+.link:hover {
+  background-color: aqua;
+  color: rgb(59, 56, 56);
+}
+@media (max-width: 760px) {
+  .body-project {
+    grid-template-columns: 1fr;
+  }
+}

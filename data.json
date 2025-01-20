@@ -1,11 +1,25 @@
 {
-  "project": [
-    {
-      "nama": "MATRIKS KALKULATOR",
-      "linkPreview": "https://github.com/gondarhaidar",
-      "linkCode": "https://github.com/gondarhaidar",
-      "img": "img/matriks.jpg"
-    }
-  ],
-  "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque aliquam quae, voluptate eaque a magnam veniam rerum velit totam pariatur repellat repellendus laboriosam dolorem ducimus voluptas impedit nihil officia tenetur. Unde, obcaecati quasi porro nobis sequi expedita voluptatibus, corrupti eligendi blanditiis accusamus doloribus nemo vero harum accusantium quas animi similique."
+    "project": [
+        {
+            "id": 1,
+            "nama": "MATRIKS KALKULATOR",
+            "linkPreview": "https://github.com/gondarhaidar",
+            "linkCode": "https://github.com/gondarhaidar",
+            "img": "img/matriks.jpg"
+        },
+        {
+            "id": 3,
+            "nama": "project 3",
+            "linkPreview": "https://github.com/gondarhaidar",
+            "linkCode": "https://github.com/gondarhaidar",
+            "img": "1737198088610.jpg"
+        },
+        {
+            "id": 4,
+            "nama": "project 5",
+            "linkPreview": "https://github.com/gondarhaidar",
+            "linkCode": "https://github.com/gondarhaidar",
+            "img": "1737198731847.jpg"
+        }
+    ]
 }
